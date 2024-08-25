@@ -1,0 +1,42 @@
+# Own ignores
+*.swp
+package-lock.json
+.pytest_cache
+*.egg-info
+.idea
+temp.*
+temp_*.py
+temp/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# CDK Context & Staging files
+.cdk.staging/
+cdk.out/
+
+# testing files
+*.html
+assets/
+.coverage
+junit.xml
+
+# osx
+.DS_Store
+
+# Distribution / packaging
+lib/*/modules
+.vscode/settings.json
+node_modules
+*.js
