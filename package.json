@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "start": "tsc && node src/index.js",
+    "start": "tsc --outDir dist && node dist/index.js",
     "format": "prettier --write 'src/**/*.{ts,tsx}'"
   },
   "devDependencies": {

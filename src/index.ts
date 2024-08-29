@@ -1,8 +1,14 @@
 import { DefaultSlotMachine } from "./default-slot-machine";
-import { RollResult } from "./roll-result.interface";
+import { ReelSymbol } from "./reel-symbol.enum";
+import { IRollResult } from "./interfaces";
 
-function main(): Promise<RollResult> {
-    const slotMachine = new DefaultSlotMachine();
+function main(): Promise<IRollResult> {
+    const slotMachine = new DefaultSlotMachine(
+        [
+            ReelSymbol.BAR,
+            ReelSymbol.BELL,
+            ReelSymbol.CHERRY,
+        ], 3);
     return slotMachine.play();
 }
 
